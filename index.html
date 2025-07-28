@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COGANCHAIRA - Comité de Ganaderos de Cartagena del Chairá</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+    window.onload = () => {
+      showSection('inicio');
+    };
+  </script>
+</head>
+<body class="font-sans antialiased">
+  <header class="bg-blue-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">COGANCHAIRA</h1>
+      <p class="text-lg">Comité de Ganaderos de Cartagena del Chairá</p>
+    </div>
+  </header>
+
+  <nav class="bg-blue-800 text-white">
+    <div class="container mx-auto px-4 py-3 flex justify-center space-x-6">
+      <a href="#" onclick="showSection('inicio')" class="hover:underline">Inicio</a>
+      <a href="#" onclick="showSection('quienes-somos')" class="hover:underline">Quiénes Somos</a>
+      <a href="#" onclick="showSection('servicios')" class="hover:underline">Servicios</a>
+      <a href="#" onclick="showSection('proyectos')" class="hover:underline">Proyectos</a>
+      <a href="#" onclick="showSection('galeria')" class="hover:underline">Galería</a>
+      <a href="#" onclick="showSection('contacto')" class="hover:underline">Contacto</a>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-10 space-y-16">
+    <section id="inicio">
+      <h2 class="text-3xl font-bold mb-4">Bienvenidos a COGANCHAIRA</h2>
+      <p class="text-gray-700">Somos una organización sin ánimo de lucro dedicada a fortalecer el sector ganadero del municipio de Cartagena del Chairá, Caquetá.</p>
+    </section>
+
+    <section id="quienes-somos" style="display: none;">
+      <h2 class="text-3xl font-bold mb-4">Quiénes Somos</h2>
+      <p class="text-gray-700">El Comité de Ganaderos de Cartagena del Chairá - COGANCHAIRA representa y apoya a los ganaderos de la región, promoviendo prácticas sostenibles y el desarrollo rural.</p>
+    </section>
+
+    <section id="servicios" style="display: none;">
+      <h2 class="text-3xl font-bold mb-4">Servicios</h2>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>Acompañamiento técnico y asistencia veterinaria</li>
+        <li>Capacitaciones y formación ganadera</li>
+        <li>Organización de ferias y eventos</li>
+        <li>Gestión de proyectos productivos y ambientales</li>
+      </ul>
+    </section>
+
+    <section id="proyectos" style="display: none;">
+      <h2 class="text-3xl font-bold mb-4">Proyectos</h2>
+      <p class="text-gray-700">COGANCHAIRA lidera y participa en iniciativas para el mejoramiento genético, conservación ambiental y fortalecimiento de la producción ganadera local.</p>
+    </section>
+
+    <section id="galeria" style="display: none;">
+      <h2 class="text-3xl font-bold mb-4">Galería</h2>
+      <p class="text-gray-700">Aquí compartiremos imágenes de nuestras actividades, eventos y proyectos destacados.</p>
+    </section>
+
+    <section id="contacto" style="display: none;">
+      <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+      <p class="text-gray-700">Email: coganchaira@gmail.com</p>
+      <p class="text-gray-700">Teléfono: +57 320 000 0000</p>
+      <p class="text-gray-700">Dirección: Cartagena del Chairá, Caquetá</p>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 text-white text-center py-4">
+    <p>&copy; 2025 COGANCHAIRA - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
